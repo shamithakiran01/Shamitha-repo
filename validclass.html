@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+body {
+    background-image: url(img.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    backdrop-filter: blur(55px);
+}
+
+fieldset {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+table tr td{
+border-radius: 5px;
+border:2px solid teal;
+align-items: center;
+}
+form{
+    display: flex;
+    text-align: justify;
+}
+#button1{
+    color: blue;
+}
+
+</style>
+</head>
+<body>
+<fieldset>
+<legend><h2 align="center">User information </h2></legend>
+<form action="#" autocomplete="off" onsubmit="return check()">
+<table style="width:100%" cellpadding="10" cellspacing="10" align="center">
+<tr><td><input type="text" id="name" placeholder="Enter Your name"> <span id="name1"></span></td>
+</tr>
+<tr><td><input type="password" id="password" placeholder="Enter Your password"> <span id="pass1"></span></td></tr>
+<tr><td><input type="password" id="conpass" placeholder="Enter Your Confirm password"> <span id="conpass1"></span></td></tr>
+<tr><td><input type="tel" id="mobile" placeholder="Enter Your mobile"> <span id="mobile1"></span></td></tr>
+<tr><td><input type="email" id="email" placeholder="Enter Your Email"> <span id="email1"></span></td></tr>
+<tr><td><input type="submit" id="button" placeholder="Submit"> <span id="button1"></span></td></tr>
+</table>
+</form>
+<script>
+    function check() {
+        var a = document.getElementById('name').value;
+        var b = document.getElementById('password').value;
+         var c = document.getElementById('conpass').value;
+         var d = document.getElementById('email').value;
+         var e = document.getElementById("mobile").value;
+
+
+        if (a == "") {
+            document.getElementById('name1').innerHTML = "It should not be null.";
+        } else if (a.length < 4) {
+            document.getElementById('name1').innerHTML = "It should not be less than 4.";
+        } else if (!isNaN(a)) {
+            document.getElementById('name1').innerHTML = "It should not be a digit.";
+        }
+
+        if (b == "") {
+            document.getElementById('pass1').innerHTML = "It should not be null.";
+        } else if (b.length < 4) {
+            document.getElementById('pass1').innerHTML = "It should not be less than 4.";
+        } else if (!isNaN(b)) {
+            document.getElementById('pass1').innerHTML = "It should not be a digit.";
+        }
+
+      
+        if (b !== c) {
+            document.getElementById('conpass1').innerHTML="password and confirm password are not matching";
+          
+        }
+        if (e === "") {
+                document.getElementById("mobile1").textContent = "Mobile should not be empty";
+                return false;
+            } else if (isNaN(e) || e.length !== 10) {
+                document.getElementById("mobile1").textContent = "Invalid mobile number";
+                return false;
+            }
+
+        if (d=="") {
+            document.getElementById('email1').innerHTML="it cannot be blank"; 
+        }else if(d.length>20){
+            document.getElementById('email1').innerHTML="it cannot greater than 20"; 
+        }
+        else if(d.length>20){
+            document.getElementById('email1').innerHTML="it cannot greater than 20"; 
+        }
+        if (!isValidEmail(d)) {
+            document.getElementById('email1').innerHTML="@ is compulsory";   
+}
+
+      
+    }
+</script>
+    
+</script>
+
+
+</fieldset>
+
+
+</body>
+</html>
