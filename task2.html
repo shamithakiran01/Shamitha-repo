@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        #t1,th,td{
+            border: 1px solid palevioletred;
+             border-collapse: collapse;
+             text-align: center;
+        }
+        #t2{
+            border: 1px solid yellow;
+            border-collapse: collapse;
+        }
+        p{
+            text-align: left;
+            padding-right: 500px;
+        }
+        .center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+            height: 300px;
+            /*padding-left: 1200px;*/
+        }
+        h1{
+            text-align: center;
+            color: beige;
+            background-color: black;
+        }
+        table{
+            border: 1px solid black;
+
+        }
+        #form{
+            width: 300px;
+            height: 500px;
+            box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+            background:beige;
+            padding: 20px;
+            margin: 8% auto 0;
+            text-align: center;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <table id="t1" style="width: 100%">
+        <tr>
+            <th style="color: teal">SNO</th>
+            <th style="color: orange">Name</th>
+            <th style="color: blue">Subject</th>
+            <th style="color: green" colspan="2">CA</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>aman</td>
+            <td>OS</td>
+            <td>10</td>
+            <td>30</td>     
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>aman</td>
+            <td>OS</td>
+            <td>10</td>
+            <td>30</td>     
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>aman</td>
+            <td>OS</td>
+            <td>10</td>
+            <td>30</td>    
+        </tr>    </table>
+        <br><br>
+        <table id="t2" style="width: 50%">
+            <tr>
+                <th>S.no</th>
+                <th>class</th>
+                <th>Floor</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>k22PA</td>
+                <td style="text-align: center;" rowspan="3">9th</td>
+            </tr>
+            <tr>
+            <td>2</td>
+            <td>k22PA</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>k22PA</td>
+            </tr>
+
+        </table>
+        <br><br>
+        <hr>
+        <h1>SHAMITHA</h1>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum itaque temporibus possimus quos. 
+            Officiis assumenda ab quasi pariatur nihil nesciunt dolorem velit quos voluptates quis. Sunt, corrupti saepe. 
+            Ab eligendi temporibus error nam facere ipsum repellat commodi iure? A voluptatibus, eius eveniet tempora iure 
+            ratione eaque nemo non consequuntur esse nihil explicabo sapiente, ea eligendi aperiam facilis qui? Ex ipsum, 
+            ratione veritatis nostrum repellendus assumenda corporis numquam debitis! Repellat itaque excepturi sit fugiat ex? 
+            Nisi temporibus similique aspernatur quis quam placeat voluptates voluptate dignissimos tempore cum dolorem, illo odit 
+            animi architecto, velit sint recusandae, corrupti esse reiciendis praesentium consequuntur molestias sequi quo? Molestias, 
+            porro pariatur? Est minima exercitationem, repudiandae fuga similique quas error. Assumenda doloremque, dolorem provident 
+            voluptatem laboriosam architecto sequi quae perspiciatis voluptate itaque laudantium unde tenetur sint et quas autem dicta 
+            nesciunt harum vero tempora quibusdam modi magni accusantium nobis? Nisi sequi tempore corporis non harum accusamus minus vel, 
+            ducimus labore vitae debitis. Eum odit aspernatur quo, excepturi dolore laudantium harum ea totam provident corporis eaque nobis 
+            officiis commodi molestiae laboriosam? Modi pariatur ducimus laudantium est? Itaque in reprehenderit pariatur voluptatum quia, 
+            eligendi reiciendis impedit quibusdam quo at, repudiandae voluptatibus a earum ipsum. Amet mollitia <a href="https://www.w3schools.com/html/" target="_blank">necessitatibus</a></p>
+        <img src="img.jpg" alt="img" class="center">
+        <br><br>
+        
+        <form id="form" style="width: 50%">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="password">password</label><br>
+            <input type="text" id="password" name="password"><br>
+            <label for="email">email</label><br>
+            <input type="text" id="email" name="email"><br>
+            <input type="radio" id="male" name="male" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="female" value="female">
+            <label for="female">Female</label><br>
+            <input type="checkbox" id="male" name="male" value="male">
+            <label for="male">Male</label>
+            <input type="checkbox" id="female" name="female" value="female">
+            <label for="female">Female</label><br>
+            <input type="submit">
+            
+
+        </form>
+        
+</body>
+</html>
