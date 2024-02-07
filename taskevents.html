@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Box Color Changer</title>
+</head>
+<body>
+    <h1> Input Box Color Changer </h1>
+    <form id="colorForm">
+        <label for="colorInput">Enter a color:</label>
+        <input type="text" id="colorInput" class="one" oninput="changeInputColor()">
+        <br><br>
+        <label for="colorInput2">Enter a color:</label>
+        <input type="text" id="colorInput2" class="one" oninput="changeInputColor()">
+
+    </form>
+
+    <script>
+        function changeInputColor() {
+            var colorInput = document.getElementById("colorInput").value;
+            document.getElementById("colorInput").style.backgroundColor = colorInput;
+            var colorInput2 = document.getElementById("colorInput2").value;
+            document.getElementById("colorInput2").style.backgroundColor = colorInput2;
+        }
+    </script>
+</body>
+</html>
+
+ 
+
